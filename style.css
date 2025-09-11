@@ -945,5 +945,8 @@ body.dark {
   color: #eee;
 }
 
+.home-link{
+  text-decoration: none;
+}
 
 
