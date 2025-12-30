@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinay 🚀 Portfolio</title>
-    <link rel="icon" href="./images/Vinay.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <title>Sai Surya Vinay - Portfolio</title>
+    <link rel="icon" href="./images/23p31a4218 (1).jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -28,21 +31,15 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <!-- <li><a href="#about">Coding Profiles</a></li> -->
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li>
-          <a
-            href="https://drive.google.com/file/d/1f1UImauCbfluQ6TS1_eGrBz-QfZEi9J3/view"
-            target="_blank"
-            >Resume</a
-          >
-        </li>
-        <li>
           <a href="#contact"><button class="btn">Let's Talk</button></a>
         </li>
-        <div class="theme-toggle" id="theme-toggle">
+        <!-- <div class="theme-toggle" id="theme-toggle">
           <i class="fas fa-moon"></i>
-        </div>
+        </div> -->
       </ul>
     </div>
 
@@ -50,12 +47,14 @@
       <div class="home-content">
         <h1>Welcome to My Portfolio</h1>
         <div class="typing-container">
-          <span class="fixed-text">I'm a</span>
+          <span class="fixed-text">I'm </span>
           <span class="typing" id="typing"></span>
         </div>
 
         <div class="buttons">
-          <a href="#contact"><button class="contact-btn">Contact Me</button></a>
+          <a href="https://drive.google.com/file/d/1JvKMGDLPe-1YDuTJGJERUrOgIJpQ8gMb/view?usp=sharing" target="_blank"
+            ><button class="contact-btn">See My Resume</button></a
+          >
           <div class="social-icons">
             <a href="https://github.com/saisuryavinay" target="_blank"
               ><i class="fab fa-github"></i
@@ -63,12 +62,12 @@
             <a href="https://linkedin.com/in/vinay-devu" target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a
-              href="https://drive.google.com/file/d/1xxOV8uGFILt_k7TpEon5ePjumv6OYn86/view?usp=sharing"
-              target="_blank"
-              class="fa-resume"
-              >📄</a
-            >
+            <a href="mailto:saisuryavinay06@gmail.com" target="_blank"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://instagram.com/_sai_surya_vinay_" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -77,8 +76,7 @@
         ><i class="fas fa-angle-double-down"></i
       ></a>
     </div>
-
-    <section class="about scroll-zoom" id="about">
+  <section class="about scroll-zoom" id="about">
       <div class="about-container">
         <div class="about-image">
           <img src="./images/About.jpg" alt="Vinay Photo" />
@@ -94,7 +92,8 @@
             <br />
             I specialize in <span class="highlight">SQL, Java, Python</span> and
             frontend development with
-            <span class="highlight">HTML, CSS, JavaScript, Bootstrap</span>.
+            <span class="highlight">React,HTML, CSS, JavaScript, Bootstrap</span
+            >.
             <br />
             I love <span class="highlight">problem-solving</span> and
             <span class="highlight">communication skills</span>. When I’m not
@@ -105,16 +104,52 @@
           <a href="./cetificates.html" target="_blank" class="resume-btn"
             >📄 Certificate Collection</a
           >
-          <a href="./coding_profiles.html" target="_blank" class="resume-btn"
+          <!-- <a href="./coding_profiles.html" target="_blank" class="resume-btn"
             >👨‍💻 Coding Profiles</a
-          >
+          > -->
         </div>
+        
       </div>
-
-      <a href="#skills" class="scroll-down"
+      <a href="#skills" class="scroll-down-ab"
         ><i class="fas fa-angle-double-down"></i
       ></a>
+
+
+      
     </section>
+<section class="coding-profiles-section" id="coding">
+  <h2 class="coding-heading">Coding Profiles</h2>
+
+  <div class="coding-profiles">
+
+    <a href="https://leetcode.com/u/_sai_surya_vinay/" target="_blank" class="coding-card">
+      <img src="./images/leetcode-icon.webp" alt="LeetCode">
+      <span>LeetCode</span>
+    </a>
+
+    <a href="https://www.hackerrank.com/profile/saisuryavinay06" target="_blank" class="coding-card">
+      <img src="./images/hackerrank.png" alt="HackerRank">
+      <span>HackerRank</span>
+    </a>
+
+    <a href="https://www.codechef.com/users/saisuryavinay" target="_blank" class="coding-card">
+      <img src="./images/cc.ico" alt="CodeChef">
+      <span>CodeChef</span>
+    </a>
+
+    <a href="https://www.geeksforgeeks.org/user/vinay_devu18/" target="_blank" class="coding-card">
+      <img src="./images/gfg.png" alt="GeeksforGeeks">
+      <span>GeeksforGeeks</span>
+    </a>
+
+  </div>
+
+  <!-- <a href="#skills" class="scroll-down-about">
+    <i class="fas fa-angle-double-down"></i>
+  </a> -->
+</section>
+
+
 
     <section class="skills scroll-zoom" id="skills">
       <h2 style="color: #647fbc; text-shadow: 0 0 10px #1c6ea4">My Skills</h2>
@@ -132,6 +167,11 @@
           <p>Python</p>
         </div>
         <div class="skill-card">
+          <img src="./images/Postman.png" alt="Git" />
+          <p>Postman</p>
+        </div>
+      
+        <div class="skill-card">
           <img src="./images/html (2).png" alt="HTML" />
           <p>HTML</p>
         </div>
@@ -147,17 +187,22 @@
           <img src="./images/bootstrap.png" alt="Bootstrap" />
           <p>Bootstrap</p>
         </div>
-        <div class="skill-card">
-          <img src="./images/git.png" alt="Git" />
-          <p>Git</p>
-        </div>
-        <div class="skill-card">
-          <img src="./images/github.png" alt="GitHub" />
-          <p>GitHub</p>
-        </div>
+
         <div class="skill-card">
           <img src="./images/react.png" alt="React" />
           <p>React</p>
+        </div>
+          <div class="skill-card">
+          <img src="./images/nodejs.png" alt="Git" />
+          <p>Node Js</p>
+        </div>
+          <div class="skill-card">
+          <img src="./images/expressjs.png" alt="Git" />
+          <p>Express Js</p>
+        </div>
+          <div class="skill-card">
+          <img src="./images/mongodb.png" alt="Git" />
+          <p>MongoDB</p>
         </div>
         <div class="skill-card">
           <img src="./images/dbms.png" alt="DBMS" />
@@ -167,8 +212,17 @@
           <img src="./images/aws.png" alt="AWS" />
           <p>AWS</p>
         </div>
+        <div class="skill-card">
+          <img src="./images/github.png" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+          <div class="skill-card">
+          <img src="./images/git.png" alt="Git" />
+          <p>Git</p>
+        </div>
       </div>
-      <a href="#projects" class="scroll-down"
+
+      <a href="#projects" class="scroll-down-skill"
         ><i class="fas fa-angle-double-down"></i
       ></a>
     </section>
@@ -199,7 +253,7 @@
         <div class="project-card">
           <img src="./images/yummify.png" alt="Portfolio Website" />
           <div class="project-info">
-            <h3>Food Website</h3>
+            <h3>Yummify</h3>
             <p>
               A visually rich and user-friendly food website 🍲 — crafted with
               React , CSS, Bootstrap to display recipes, categories, and
@@ -208,7 +262,12 @@
             <div class="tech-stack">
               <span>React</span><span>Bootstrap</span><span>CSS</span>
             </div>
-            <a href="https://yummify-zeta.vercel.app/" target="_blank" class="project-btn">View Live</a>
+            <a
+              href="https://yummify-foodie.vercel.app/"
+              target="_blank"
+              class="project-btn"
+              >View Live</a
+            >
           </div>
         </div>
         <div class="project-card">
@@ -239,7 +298,7 @@
               improving efficiency.
             </p>
             <div class="tech-stack">
-              <span>React</span><span>CSS</span><span>JavaScript</span>
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
             <a
               href="https://saisuryavinay.github.io/STrack/stopwatch.html"
@@ -250,9 +309,9 @@
           </div>
         </div>
       </div>
-      <a href="#contact" class="scroll-down"
+      <!-- <a href="#contact" class="scroll-down"
         ><i class="fas fa-angle-double-down"></i
-      ></a>
+      ></a> -->
     </section>
 
     <section id="contact" class="contact-section scroll-zoom">
@@ -285,15 +344,6 @@
           </div>
           <button type="submit" class="btn primary">Send Message</button>
         </form>
-        <span
-          id="msg"
-          style="
-            color: green;
-            font-weight: 500;
-            display: block;
-            margin-top: 10px;
-          "
-        ></span>
       </div>
     </section>
 

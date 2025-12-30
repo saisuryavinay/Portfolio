@@ -1,5 +1,6 @@
 // Typing animation
-    const texts = ["Frontend Developer","Full Stack Developer","Programmer","Engineering Student","Professional Esports Player"];
+    const texts = ["a Frontend Developer",
+      "a Backend Developer","An Full Stack Developer","a Programmer","An Engineering Student","a Professional Esports Player"];
     let count = 0, index = 0, currentText = "", letter = "";
     const typingElement = document.getElementById("typing");
 
@@ -97,21 +98,43 @@
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById("msg");
 
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          msg.innerHTML = "✅ Message sent successfully!";
-          msg.style.color = "green";
-          setTimeout(() => msg.innerHTML = "", 5000);
-          form.reset();
-        })
-        .catch(error => {
-          msg.innerHTML = "❌ Error sending message!";
-          msg.style.color = "red";
-          console.error('Error!', error.message);
-        });
+ form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  Toastify({
+    text: "Sending message...",
+    duration: 2000,
+    gravity: "top",
+    position: "right",
+    backgroundColor: "#1c6ea4",
+  }).showToast();
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then(() => {
+      Toastify({
+        text: "✅ Message sent successfully!",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "#22c55e",
+      }).showToast();
+
+      form.reset();
+    })
+    .catch(() => {
+      Toastify({
+        text: "❌ Error sending message!",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "#ef4444",
+      }).showToast();
     });
+});
+
 
     // ✨ NEW: JavaScript for Scroll-Triggered Zoom Animation ✨
     const scrollElements = document.querySelectorAll(".scroll-zoom");
