@@ -312,8 +312,8 @@ canvas {
 }
 
 .about {
-  min-height: 100vh;
-  padding: 80px 10%;
+  /* min-height: 100vh; */
+  padding: 60px 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,7 +382,7 @@ canvas {
 /* Coding Profiles Section */
 .coding-profiles-section {
   margin-top: -120px;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   text-align: center;
   color: white;
 }
@@ -2245,7 +2245,7 @@ html, body {
 /* Remove negative spacing that breaks layout */
 .coding-profiles-section {
   margin-top: 0 !important;
-  padding-top: 40px !important;
+  /* padding-top: 40px !important; */
   position: relative;
   overflow: hidden;
 }
