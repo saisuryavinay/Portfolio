@@ -110,9 +110,9 @@
         </div>
         
       </div>
-      <a href="#skills" class="scroll-down-ab"
+      <!-- <a href="#skills" class="scroll-down-ab"
         ><i class="fas fa-angle-double-down"></i
-      ></a>
+      ></a> -->
 
 
       
@@ -222,9 +222,9 @@
         </div>
       </div>
 
-      <a href="#projects" class="scroll-down-skill"
+      <!-- <a href="#projects" class="scroll-down-skill"
         ><i class="fas fa-angle-double-down"></i
-      ></a>
+      ></a> -->
     </section>
 
     <section class="projects scroll-zoom" id="projects">
@@ -353,5 +353,23 @@
 
     <canvas></canvas>
     <script src="script.js"></script>
+    <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
+  });
+
+  // Auto close on link click
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    });
+  });
+</script>
+
   </body>
 </html>
