@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./images/cetiicon.png">
+  <title>Certifications</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: white;
+    }
+
+    .cert-section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .cert-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0px; 
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .cert-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cert-item img {
+      width: 240px;  
+      max-width: 100%;
+      border-radius: 30px;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    .cert-item span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    @media (max-width: 900px) {
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cert-item img {
+        width: 240px;
+      }
+    }
+    @media (max-width: 500px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-item img {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="cert-section">
+    <h2 class="cert-title">Certifications & Skills</h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-item">
+        <img src="images/HTML.png" alt="HTML">
+        <span>HTML</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/csss.png" alt="CSS">
+        <span>CSS</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/js.png" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/javao.png" alt="Java Oracle">
+        <span>Java (Oracle)</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/py.png" alt="Python">
+        <span>Python</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/sql.png" alt="SQL">
+        <span>SQL</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/awss.png" alt="AWS">
+        <span>AWS</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/awsp.png" alt="AWS Practitioner">
+        <span>AWS Practitioner</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/gitf.png" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+
+      <div class="cert-item">
+        <img src="images/adobe.png" alt="Adobe Hackathon">
+        <span>Adobe Hackathon</span>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
