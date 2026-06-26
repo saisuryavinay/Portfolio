@@ -1,4 +1,4 @@
-"# Sai Surya Vinay — Personal Portfolio
+# Sai Surya Vinay — Personal Portfolio
 
 Welcome to my personal developer portfolio website. This repository showcases my skills, projects, coding profiles, and certificates using a clean HTML/CSS/JavaScript design.
 
